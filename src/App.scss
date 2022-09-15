@@ -1,0 +1,28 @@
+$mainBgColor: #1b68b3;
+
+.container {
+  margin-top: 6rem;
+
+  h1 {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+  }
+}
+
+.users-list {
+  @media screen and (max-width: 576px) {
+    width: 100px
+  }
+}
+
+.user-form {
+  background-color: #FFFFFFFF;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    --bs-gutter-x: 0;
+  }
+}

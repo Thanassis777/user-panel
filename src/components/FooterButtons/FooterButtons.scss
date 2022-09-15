@@ -1,0 +1,22 @@
+@use '../../App';
+
+.button-columns {
+  #save-Btn {
+    background-color: App.$mainBgColor;
+  }
+
+  #cancel-Btn {
+    background-color: #f7f7f7;
+    border: none;
+  }
+
+    @media screen and (max-width: 378px) {
+    display: grid;
+    width: 100%;
+    grid-gap: 2rem;
+
+    #save-Btn {
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@use '../../App';
+
+.custom-list-group {
+  height: 680px;
+  overflow: auto;
+
+  @media screen and (max-width: 768px) {
+    overflow: hidden;
+    height: auto;
+  }
+}
+
+.custom-list-item {
+  border: 0;
+
+  #email-label {
+    color: grey;
+    word-break: break-word;
+  }
+
+  &:focus, &:active, {
+    background-color: App.$mainBgColor;
+    color: #fff;
+
+    #email-label {
+      color: darkgray;
+    }
+  }
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+
+  .user-info {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.list-image {
+  @media screen and (max-width: 767px) {
+    width: 60px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 50px;
+  }
+}
+
+.list-group-item.active {
+  background-color: App.$mainBgColor;
+
+  #email-label {
+    color: grey;
+    word-break: break-word;
+  }
+}
+
